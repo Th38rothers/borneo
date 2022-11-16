@@ -1,0 +1,899 @@
+:root {
+    --main-color: #d3ad7f;
+    --black: #13131a;
+    --bg: #d6e9a9;
+    --nav: rgb(169, 235, 83);
+    --border: .1rem solid rgba(225, 225, 225, .3)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+html {
+    /*font-size: 62.5%;*/
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: .5rem;
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('poppins-regular-webfont.woff2') format('woff2'),
+        url('poppins-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('roboto-light-webfont.woff2') format('woff2'),
+        url('roboto-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('OpenSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    display: contents;
+    background: #fff;
+}
+
+/* About Company Start */
+
+#body-content {
+    margin-bottom: 0px;
+}
+
+#judul-About {
+    width: 100%;
+    height: 100px;
+}
+
+#judul-About .about-judul {
+    height: 100px;
+
+}
+
+@media (min-width: 1025px) {
+    #judul-About {
+        font-size: 35px;
+        margin: 0px auto;
+        max-width: 1200px;
+    }
+
+    .about-judul {
+        display: flex;
+        align-items: center;
+    }
+
+    .about-judul h1 {
+        padding: 20px 30px 30px 30px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #judul-About .about-judul {
+        height: 100px;
+        padding: 20px 30px 30px 30px;
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #judul-About .about-judul {
+        text-align: center;
+        font-size: 30px;
+        padding: 20px 30px 30px 30px;
+    }
+}
+
+
+.about-judul .judul a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Poppins',
+        sans-serif;
+    text-transform: capitalize;
+
+}
+
+.about-judul .judul a span {
+    color: #1ab925;
+    font-size: 45px;
+}
+
+/*-- Img Desk Content About --*/
+#about div {
+    width: 100%;
+    align-content: center;
+    align-items: center;
+}
+
+.about {
+    margin-top: 0px;
+}
+
+.keterangan {
+    width: 100%;
+}
+
+.keterangan .ket-kiri {
+    background: #f1f2f57a;
+    text-align: justify;
+    border-radius: 5px;
+    font-family: 'Open Sans';
+}
+
+.keterangan .ket-kiri p {
+    text-align: justify;
+    color: #7A7A7A;
+
+}
+
+
+@media (min-width: 1025px) {
+    .about {
+        max-height: 545px;
+    }
+
+    .keterangan {
+        max-width: 1200px;
+        margin: 0px auto;
+    }
+
+    .keterangan1 {
+        display: flex;
+
+    }
+
+    .ket-kiri {
+        order: 1;
+        max-width: 900px;
+        height: 485px;
+    }
+
+    .ket-kiri-p {
+        padding: 70px;
+    }
+
+    .isi-ket {
+        margin-bottom: 16px;
+        max-height: 89px;
+        max-width: 760px;
+        line-height: 28.9px;
+        justify-items: baseline;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .ket-kanan {
+        order: 2;
+        max-height: 915px;
+        max-width: 388px;
+        display: flex;
+        align-items: center;
+    }
+
+    .foto-ket {
+        max-width: 388px;
+        box-shadow: -5px -3px 10px #13131a;
+        justify-content: center;
+        display: flex;
+    }
+
+    .foto-ket img {
+        width: 291px;
+        height: 366px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .keterangan {
+        padding: 0px 80px 100px 80px;
+        height: 800px;
+    }
+
+    .keterangan1 {
+        display: flex;
+    }
+
+    .ket-kiri {
+        order: 1;
+        max-height: 915px;
+        max-width: 475px;
+    }
+
+    .ket-kiri-p {
+        padding: 75px 35px 50px 35px;
+        max-height: 915px;
+        max-width: 475px;
+    }
+
+    .ket-kiri-pp {
+        margin-top: 20px;
+        max-height: 745px;
+        max-width: 405px;
+    }
+
+
+    .isi-ket {
+        margin-bottom: 16px;
+        max-height: 216px;
+        max-width: 405px;
+        line-height: 28.9px;
+        justify-items: baseline;
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    .ket-kanan {
+        order: 2;
+        max-height: 915px;
+        width: 388px;
+        display: flex;
+        align-items: center;
+    }
+
+    .foto-ket {
+        max-width: 388px;
+        box-shadow: -5px -3px 10px #13131a;
+        justify-content: center;
+        display: flex;
+    }
+
+    .foto-ket img {
+        width: 274px;
+        height: 344px;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .keterangan {
+        padding: 0px 30px 30px 30px;
+        height: 800px;
+    }
+
+    .keterangan1 {
+        margin-bottom: 10px;
+    }
+
+    .keterangan .ket-kiri {
+        max-height: 1700px;
+        margin-bottom: auto;
+    }
+
+    .ket-kiri-p {
+        padding: 20px;
+    }
+
+    .ket-kiri-pp {
+        margin-top: 20px;
+    }
+
+    .isi-ket {
+        margin-bottom: 14px;
+        max-height: 1700px;
+        line-height: 25px;
+        justify-items: baseline;
+        font-size: 14px;
+    }
+
+    .ket-kanan {
+        max-width: 707px;
+        height: 456px;
+    }
+
+    .ket-kanan div {
+        margin: 20px;
+    }
+
+    .foto-ket {
+        box-shadow: -5px -3px 10px #13131a;
+        justify-content: center;
+        display: flex;
+    }
+}
+
+/* About Company End */
+
+/* Company Comitment Start */
+
+#our-comitment {
+    width: 100%;
+    padding-bottom: 60px;
+    background-color: #dcdde0bb;
+    margin-top: 30px;
+}
+
+/*
+.oc-team-marg {
+    padding-top: 50px;
+}
+
+.oc-team-trans {
+    margin-top: -50px;
+    transition: 1s ease-out;
+}
+*/
+
+.oc-margin {
+    margin: 0px 35px;
+    padding: 20px 10px;
+}
+
+
+#our-comitment .oc-judul {
+    height: 80px;
+    margin-top: 30px;
+    padding-top: 40px;
+}
+
+
+#our-comitment .oc-judul h1 {
+    font-family: 'Poppins';
+    font-size: 35px;
+    text-align: center;
+}
+
+@media (min-width: 1025px) {
+    .oc-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .oc-content div {
+        min-height: 450px;
+        min-width: 250px;
+        max-width: 350px;
+        border-radius: 10px;
+        margin: 10px;
+        cursor: pointer;
+    }
+
+    .oc-content div h1 {
+        font-size: 25px;
+        text-align: center;
+        padding-top: 20px;
+        color: rgba(255, 255, 255, 0.808);
+        font-family: 'Poppins';
+    }
+
+    .oc-content div p {
+        padding-top: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
+        text-align: justify;
+        font-weight: 300;
+        color: #b6b3b3;
+        font-size: 22px;
+        font-family: 'Poppins';
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .oc-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .oc-content div {
+        min-height: 450px;
+        min-width: 250px;
+        max-width: 350px;
+        border-radius: 10px;
+        margin: 10px;
+    }
+
+    .oc-content div h1 {
+        font-size: 25px;
+        text-align: center;
+        padding-top: 20px;
+        color: rgba(255, 255, 255, 0.808);
+        font-family: 'Poppins';
+    }
+
+    .oc-content div p {
+        padding-top: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
+        text-align: justify;
+        font-weight: 300;
+        color: #b6b3b3;
+        font-size: 22px;
+        font-family: 'Poppins';
+    }
+
+}
+
+
+
+.oc-left {
+    background: linear-gradient(rgba(19, 18, 18, 0.678), #0a0a0a9c),
+        url(palm.webp);
+    transition: .3s;
+
+
+}
+
+.oc-left:hover {
+    background: linear-gradient(rgba(19, 18, 18, 0.678), #0a0a0a36),
+        url(palm.webp);
+    background-size: 230%;
+    transform: scale(1.03);
+    transition: .3s;
+}
+
+
+.oc-mid {
+    background: linear-gradient(rgba(19, 18, 18, 0.678), #0a0a0a6e),
+        url(th.webp);
+    transition: .3s;
+}
+
+.oc-mid:hover {
+    background: linear-gradient(rgba(19, 18, 18, 0.678), #0a0a0a36),
+        url(th.webp);
+    background-size: 160%;
+    transform: scale(1.03);
+    transition: .3s;
+}
+
+.oc-right {
+    background: linear-gradient(rgba(19, 18, 18, 0.678), #0a0a0a9c),
+        url(farm.webp);
+    transition: .3s;
+
+}
+
+.oc-right:hover {
+    background: linear-gradient(rgba(19, 18, 18, 0.678), #0a0a0a36),
+        url(farm.webp);
+    background-size: 200%;
+    transform: scale(1.03);
+    transition: .3s;
+}
+
+
+
+/* Company Comitment End */
+
+@media screen and (max-width: 767px) {
+    .oc-judul h1 {
+        font-size: calc(20px + 20px);
+    }
+
+    .oc-margin {
+        padding: 0px;
+    }
+
+    .oc-content {
+        max-width: 697px;
+    }
+
+    .oc-content div {
+        min-height: 450px;
+        min-width: 250px;
+        max-width: 900px;
+        border-radius: 10px;
+        margin: 10px 20px;
+    }
+
+    .oc-left-isi {
+        margin: 0px;
+    }
+
+    .oc-content div h1 {
+        font-size: calc(10px + 20px);
+        text-align: center;
+        padding-top: 20px;
+        color: rgba(255, 255, 255, 0.808);
+        font-family: 'Poppins';
+    }
+
+    .oc-content div p {
+        padding-top: 30px;
+        padding-left: 5px;
+        padding-right: 5px;
+        text-align: justify;
+        font-weight: 300;
+        color: #b6b3b3;
+        font-family: 'Poppins';
+        font-size: calc(10px + 20px);
+    }
+
+}
+
+/* Our Team Start */
+
+#team {
+    margin-top: 50px;
+}
+
+/*
+.team-trans {
+    margin-top: -80px;
+    transition: 2s ease-out;
+}
+*/
+#team .judul-team {
+    text-align: center;
+}
+
+.judul-team h1 span {
+    color: #1ab925;
+    font-size: 45px;
+}
+
+.jt-content {
+    margin: 0px;
+
+}
+
+.jt-left {
+    min-height: 450px;
+    max-width: 350px;
+    border-radius: 10px;
+    background: linear-gradient(rgba(19, 18, 18, 0.678), #0a0a0a9c),
+        url(ourTeam.webp);
+}
+
+.jt-left img {
+    height: 100%;
+    width: 150px;
+    border-radius: 8px;
+
+}
+
+.jt-left h1 {
+    color: rgba(255, 255, 255, 0.808);
+    text-align: center;
+}
+
+
+
+.jt-left p {
+    color: #9e9d9d93;
+    text-align: justify;
+}
+
+.jt-right {
+    min-height: 450px;
+    max-width: 350px;
+    border-radius: 10px;
+    background: linear-gradient(rgba(19, 18, 18, 0.678), #0a0a0a9c),
+        url(ourTeam.jpg);
+}
+
+.jt-right img {
+    height: 100%;
+    width: 150px;
+    border-radius: 8px;
+}
+
+.jt-right h1 {
+    color: rgba(255, 255, 255, 0.808);
+    text-align: center;
+}
+
+.jt-right p {
+    color: #9e9d9d93;
+    text-align: justify;
+}
+
+@media (min-width: 1025px) {
+    .judul-team {
+        font-size: 35px;
+        margin-bottom: 50px;
+    }
+
+    .jt-content-isi {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .jt-content div {
+        margin: 10px;
+    }
+
+    .jt-left div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .jt-left h1 {
+        font-size: 28px;
+        padding: 15px 0px;
+    }
+
+    .jt-left p {
+        font-size: 20px;
+        padding: 0px 15px;
+        font-family: 'Open Sans';
+        line-height: 20px;
+    }
+
+    .jt-right div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .jt-right h1 {
+        font-size: 28px;
+        padding: 15px 0px;
+    }
+
+    .jt-right p {
+        font-size: 20px;
+        padding: 0px 15px;
+        font-family: 'Open Sans';
+        line-height: 20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .judul-team {
+        font-size: 35px;
+        margin-bottom: 50px;
+    }
+
+    .jt-content-isi {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .jt-content div {
+        margin: 10px;
+    }
+
+    .jt-left div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .jt-left h1 {
+        font-size: 28px;
+        padding: 15px 0px;
+    }
+
+    .jt-left p {
+        font-size: 20px;
+        padding: 0px 15px;
+        font-family: 'Open Sans';
+        line-height: 20px;
+    }
+
+    .jt-right div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .jt-right h1 {
+        font-size: 28px;
+        padding: 15px 0px;
+    }
+
+    .jt-right p {
+        font-size: 20px;
+        padding: 0px 15px;
+        font-family: 'Open Sans';
+        line-height: 20px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .judul-team {
+        font-size: 35px;
+        margin-bottom: 50px;
+    }
+
+    .jt-content-isi {
+        margin: 0px 200px;
+    }
+
+    .jt-left div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .jt-left {
+        margin-bottom: 20px;
+    }
+
+    .jt-left-img {
+        padding-top: 10px;
+    }
+
+    .jt-left h1 {
+        font-size: 28px;
+        padding: 15px 0px;
+    }
+
+    .jt-left p {
+        font-size: 20px;
+        padding: 0px 15px;
+        font-family: 'Open Sans';
+        line-height: 20px;
+    }
+
+    .jt-right {
+        margin-bottom: 20px;
+    }
+
+    .jt-right div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .jt-right-img {
+        padding-top: 10px;
+    }
+
+    .jt-right h1 {
+        font-size: 28px;
+        padding: 15px 0px;
+    }
+
+    .jt-right p {
+        font-size: 20px;
+        padding: 0px 15px;
+        font-family: 'Open Sans';
+        line-height: 20px;
+    }
+}
+
+/* Our Team End */
+
+/* Contact Start */
+#contact {
+    width: 100%;
+    height: 800px;
+    background-color: #dcdde0bb;
+    padding-top: 60px;
+    margin-top: 80px;
+}
+
+.judul-contact h1 {
+    font-size: 38px;
+    text-align: center;
+}
+
+.contact-container0 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 90px;
+}
+
+.contact-container {
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.contact-left {
+    width: 600px;
+    height: 500px;
+    padding: 100px 40px;
+    align-items: center;
+}
+
+.contact-left1 {
+    max-height: 800px;
+    max-width: 600px;
+}
+
+.contact-left h1 {
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.contact-left h1 span {
+    color: #1ab925;
+    font-size: 35px;
+}
+
+.contact-left h4 {
+    margin-bottom: 40px;
+}
+
+.contact-left p {
+    margin-bottom: 10px;
+}
+
+.contact-left p a {
+    text-decoration: none;
+    color: #555454;
+    font-size: 20px;
+}
+
+.contact-left p a span {
+    color: #158f1d;
+    font-weight: 900;
+}
+
+.contact-form {
+    max-height: 800px;
+    max-width: 600px;
+
+
+}
+
+.contact-form1 form input,
+form textarea {
+    width: 100%;
+    padding: 14px;
+    background: #d3d1d1;
+    color: #464545fd;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.contact-form1 textarea {
+    resize: none;
+    height: 240px;
+}
+
+.contact-form1 .submit {
+    display: inline-block;
+    font-size: 16px;
+    width: 160px;
+    transition: all .45s ease;
+    background: #1ab925;
+    color: #fffefe;
+}
+
+.contact-form1 .submit:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    background: #16971e;
+    color: #fffefe;
+}
+
+/* Contact End */
